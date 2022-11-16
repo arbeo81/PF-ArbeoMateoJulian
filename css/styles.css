@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 62.5%; */
+
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    background-color: rgba(184, 183, 183, 0.193);
+    height: 80px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.logo{
+    width: 250px;
+    position: absolute;
+    z-index: 60;
+    padding-left: 30px; 
+}
+
+.nav-header-ul-links{  
+    font-size: 20px;
+    color: black;
+    top: 25px;
+    left: 55vw;
+    margin-left: 30px;
+    text-decoration: none;
+    position: relative;
+    z-index: 50;
+}
+
+.nav-header-ul-links:hover{
+    color: rgb(190, 190, 190);
+}
+
+.seccion-titulo-img{
+    width: 100vw;
+    top: -40vh;
+    position: relative;
+}
+
+.seccion-titulo-h1{
+    background-color: rgba(128, 128, 128, 0.292);
+    width: 100%;
+    height:70px;
+    top: -130vh;
+    font-size: 8vh;
+    text-align: center;
+    position: relative;
+    padding-top: 7px;
+}
+
+ .seccion-titulo-div-img{
+    width: 50vw;
+    top: -15rem;
+    left: 50vw;
+    position: relative;
+}
+
+.seccion-titulo-h2{
+    font-size:2rem;
+    width: 50vw;
+    top: -60rem;
+    left: 0vw;
+    margin-left: 40px;
+    position: relative;
+}
+
+.seccion-titulo-parrafo{
+    font-size:2rem;
+    width: 40vw;
+    top: -58rem;
+    left: 0vw;
+    margin-left: 40px;
+    position: relative;
+}
+
+.seccion-ultimosProyectos-h2{
+    top: -800px;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.seccion-ultimosProyectos-img37{
+    width:47vw;
+    top: -780px;
+    margin: 20px;
+    position: relative;
+}
+
+.seccion-ultimosProyectos-img44{
+    width:47vw;
+    top: -930px;
+    position: relative;
+}
+
+.seccion-ultimosProyectos-img84{
+    width:47vw;
+    top: -800px;
+    margin: 20px;
+    position: relative;
+}
+
+.seccion-ultimosProyectos-imgJMGbaño{
+    width:47vw;
+    top: -930px;
+    position: relative;
+}
+
+.seccion-ultimosProyectos-h3-casaRafaela{
+    background-color: rgba(163, 163, 163, 0.271);
+    font-size: 30px;
+    top: -2700px;
+    margin-left: 20%;
+    position: relative;
+}
+
+.seccion-ultimosProyectos-h3-A2774{
+    background-color: rgba(163, 163, 163, 0.271);
+    font-size: 30px;
+    top: -2700px;
+    margin-left: 80%;
+    position: relative;
+}
+
+.seccion-ultimosProyectos-h3-12DeOctubre{
+    background-color: rgba(163, 163, 163, 0.271);
+    font-size: 30px;
+    top: -1700px;
+    margin-left: 20%;
+    position: relative;
+}
+
+.seccion-ultimosProyectos-h3-JMG2458{
+    background-color: rgba(163, 163, 163, 0.271);
+    font-size: 30px;
+    top: -1700px;
+    margin-left: 80%;
+    position: relative;
+}
+
+#form{
+    top: 4050px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+#footer{
+    top: 4600px;
+    position: absolute;
+    text-align: center;
+    margin-left: 33%;
+    color: black;
+}
+
+.footer-div-emails-info, .footer-div-emails-proyecto, .footer-div-emails-admin{
+   color: black;
+    text-decoration: none;
+}
+
+.seccion-titulo-secciones{
+    width: 50vw;
+}
+
+
+
