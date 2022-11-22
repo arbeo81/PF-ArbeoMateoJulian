@@ -10,93 +10,155 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;900&family=Roboto:wght@100;300;400&display=swap"
         rel="stylesheet">
     <title>EstudioVk</title>
-    <link rel="shortcut icon" href="./../assets/images/shortcut.jpg" type="Logo Estudiovk" />.
-    <link rel="stylesheet" href="./../css/styles.css">
-
+    <link rel="shortcut icon" href="./../assets/images/shortcut.jpg" type="Logo Estudiovk" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./../css/all.min.css"/>
+    <link rel="stylesheet" href="./../css/bootstrap.min.css"/> 
+    <link rel="stylesheet" href="./../css/styles.css"/>
 </head>
+<body>
 
-<body id="body">
-    <header id="header">
-            <a title="logo EstudioVk" href="./index.html"><img class="logo" src="./../assets/images/logo.png" alt="logo EstudioVk"></a>   
-        <nav class="nav-header">
-            <ul class="nav-header-ul">
-                <a class="nav-header-ul-links" href="./nosotros.html">Nosotros</a></li>
-                <a class="nav-header-ul-links" href="./proyectos.html">Proyectos</a>
-                <a class="nav-header-ul-links" href="./loQueHacemos.html">Lo que hacemos</a>
-                <a class="nav-header-ul-links" href="./contacto.html">Contacto</a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-       <section class="section-proyectos">
-            <div class="section-proyectos-div-proyecto1">
-                <img class="section-proyectos-img-proyecto1" src="./../assets/images/Capa 37__400px.jpg" alt="descripcion de la imagen">
-                <h3 class="section-proyectos-h3-proyecto1">Dirección de la obra</h3>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light px-4 px-lg-5">
+         <a href="index.html" class="navbar-brand d-flex justify-content-center align-items-center">
+             <img class="logo" src="./../assets/images/logo.png" alt="logo EstudioVk"></a>
+         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+             <div class="navbar-nav ms-auto align-items-center">
+                 <a href="./nosotros.html" class="nav-item nav-link active">Nosotros</a>
+                 <a href="./proyectos.html" class="nav-item nav-link">Proyectos</a>
+                 <a href="./loQueHacemos.html" class="nav-item nav-link">Lo que hacemos</a>
+                 <a href="./contacto.html" class="nav-item nav-link">Contacto</a>
+             </div>  
+         </div>
+         </nav>
+     </header> 
+     <main>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">   
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./../assets/images/cocinaColorGris.jpg" class="d-block w-100 main-carusel-imagen" alt="cocina color gris">
+                    </div>
+                    <div class="carousel-caption d-block d-md-block">
+                      <h1 class="carousel-imagen-texto1 sombreado-titulos animate__animated animate__fadeIn" >Proyectos</h1>
+                    </div>
+                </div>
+            </div>           
+        </section>
+        <section>
+            <div class="card-group px-lg-5 pt-lg-5 h-75">
+              <div class="card">
+                <img src="./../assets/images/Capa 16.jpg" class="card-img-top img-hover-opacity" alt="cocina gris">
+                <div class="card-body">
+                  <h5 class="card-title text-center">12O 750</h5>
+                  <p class="card-text text-center">Construccion de casa de 280m2, principalmente realizada en hormigon visto, planificación, proyecto y dirección de obra.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./../assets/images/Capa 18.jpg" class="card-img-top img-hover-opacity" alt="cocina alargada clara">
+                <div class="card-body">
+                  <h5 class="card-title text-center">A 2377</h5>
+                  <p class="card-text text-center">Reforma de cocina y baño.</p> 
+                </div>
+              </div>
+              <div class="card">
+                <img src="./../assets/images/Capa 22.jpg" class="card-img-top img-hover-opacity" alt="parte living">
+                <div class="card-body">
+                  <h5 class="card-title text-center">F 2774</h5>
+                  <p class="card-text text-center">Reforma de cocina, baño, living de departamento de 90m2.</p>
+                </div>
+              </div>
             </div>
-            <div class="section-proyectos-div-proyecto2">
-                <img class="section-proyectos-img-proyecto2" src="./../assets/images/Capa 37__400px.jpg" alt="descripcion de la imagen">
-                <h3 class="section-proyectos-h3-proyecto2">Dirección de la obra</h3>
+            <div class="card-group px-lg-5 h-75">
+                <div class="card">
+                  <img src="./../assets/images/Capa 17.jpg" class="card-img-top img-hover-opacity" alt="cocina gris">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">JMG 1684</h5>
+                    <p class="card-text text-center">Construccion de casa unifamiliar, proyecto y dirección de obra.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./../assets/images/JMGBaño.jpg" class="card-img-top img-hover-opacity" alt="baño verde">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">J 2956</h5>
+                    <p class="card-text text-center">Reforma de duplex, cocina, tres baños y terraza con parrilla y cerramiento de aluminio.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./../assets/images/IMG_20181103_173226_446.jpg" class="card-img-top img-hover-opacity" alt="living madera">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">A 1956</h5>
+                    <p class="card-text text-center">Reforma integral de PH, con patio de 50m2, proyecto y dirección de obra.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-group px-lg-5 pb-lg-5 h-75">
+                <div class="card">
+                  <img src="./../assets/images/Capa 40 copia.jpg" class="card-img-top img-hover-opacity" alt="cocina gris y madera">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">J 3727</h5>
+                    <p class="card-text text-center">Reforma de cocina, baño y tolilte en departamento de 115m2.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./../assets/images/IMG_20181103_173226_446.jpg" class="card-img-top img-hover-opacity" alt="cocina blanca y madera">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">V 61</h5>
+                    <p class="card-text text-center">Reforma integral de casa unifamiliar, dos plantas, cocina, baños y varios ambientes.</p>  
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./../assets/images/foto 84.jpg" class="card-img-top img-hover-opacity" alt="living hormigon">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">L 1726</h5>
+                    <p class="card-text text-center">Construcción de vivienda unifamiliar en una planta sobre lote de 900m2, construcción de 217m2 cubiertos.</p>
+                  </div>
+                </div>
+              </div>      
+        </section>    
+    </main>
+    <footer>
+      <div class="container-fluid btn-light text-secondary footer fadeIn" >
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 footer-container-row-div">
+                    <h5 class="footer-container-row-col-h5 mb-4">Dirección</h5>
+                    <p class="mb-2"></i>Recoleta, Caba, Buenos Aires</p>
+                    <p class="mb-2"></i>info@estudiovk.com</p>
+                    <p class="mb-2"></i>+5491134374532</p>   
+                </div>
+                <div class="footer-div-redesSociales col-lg-4 col-md-6">
+                    <h5 class="footer-container-row-col-h5 mb-4">Redes Sociales</h5>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-div-redesSociales-facebook img-hover-opacity" src="./../assets/images/faceboo.png" alt="logo facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="footer-div-redesSociales-instagram img-hover-opacity" src="./../assets/images/instagram.png" alt="logo de instagram"></a>
+                    <a href="https://ar.pinterest.com/" target="_blank"><img class="footer-div-redesSociales-pinterest img-hover-opacity" src="./../assets/images/pinterest.png" alt="logo de pinterest"></a>
+                </div>   
+                <div class="footer-div-redesSociales col-lg-4 col-md-6">
+                    <h5 class="footer-container-row-whatsapp mb-4">Whatsapp</h5>
+                    <a href="https://wa.me/+5491134374356" target="_blank"><img class="mb-4 footer-div-redesSociales-whatsapp img-hover-opacity" src="./../assets/images/whatsapp.png" alt="logo de instagram"></a>
+                </div> 
+                </div>    
             </div>
-            <div class="section-proyectos-div-proyecto3">
-                <img class="section-proyectos-img-proyecto3" src="./../assets/images/Capa 37__400px.jpg" alt="descripcion de la imagen">
-                <h3 class="section-proyectos-h3-proyecto3">Dirección de la obra</h3>
-            </div>
-            <div class="section-proyectos-div-proyecto4">
-                <img class="section-proyectos-img-proyecto4" src="./../assets/images/Capa 37__400px.jpg" alt="descripcion de la imagen">
-                <h3 class="section-proyectos-h4-proyecto4">Dirección de la obra</h3>
-            </div>
-            <div class="section-proyectos-div-proyecto5">
-                <img class="section-proyectos-img-proyecto5" src="./../assets/images/Capa 37__400px.jpg" alt="descripcion de la imagen">
-                <h3 class="section-proyectos-h3-proyecto5">Dirección de la obra</h3>
-            </div>
-            <div class="section-proyectos-div-proyecto6">
-                <img class="section-proyectos-img-proyecto6" src="./../assets/images/Capa 37__400px.jpg" alt="descripcion de la imagen">
-                <h3 class="section-proyectos-h3-proyecto6">Dirección de la obra</h3>
-            </div>
-            <div class="section-proyectos-div-proyecto7">
-                <img class="section-proyectos-img-proyecto7" src="./../assets/images/Capa 37__400px.jpg" alt="descripcion de la imagen">
-                <h3 class="section-proyectos-h3-proyecto7">Dirección de la obra</h3>
-            </div>
-            <div class="section-proyectos-div-proyecto8">
-                <img class="section-proyectos-img-proyecto8" src="./../assets/images/Capa 37__400px.jpg" alt="descripcion de la imagen">
-                <h3 class="section-proyectos-h3-proyecto8">Dirección de la obra</h3>
-            </div>
-            <div class="section-proyectos-div-proyecto9">
-                <img class="section-proyectos-img-proyecto9" src="./../assets/images/Capa 37__400px.jpg" alt="descripcion de la imagen">
-                <h3 class="section-proyectos-h3-proyecto9">Dirección de la obra</h3>
-            </div>
-            <div class="section-proyectos-div-proyecto10">
-                <video class="section-proyectos-video-proyecto10" src="./../assets/videos/DJI_0069.MOV" controls width="500px"></video>
-                <h3 class="section-proyectos-h3-proyecto10">Dirección de la obra</h3>
-            </div>
-       </section>
-    </main>    
-    <footer id="footer">
-        <div class="footer-div-emails">
-            <p class="footer-div-parrafo-escribinos">Escribinos a:</P>
-            <a class="footer-div-emails-info" href="mailto:info@estudiovk.com">info@estudiovk.com</a><br>
-            <a class="footer-div-emails-proyecto" href="mailto:proyecto@estudiovk.com">proyecto@estudiovk.com</a><br>
-            <a class="footer-div-emails-admin" href="mailto:administracion@estudiovk.com">administracion@estudiovk.com</a>
-        </div><br>
-        <div class="footer-div-whatsapp">
-            <a href="https://wa.me/5491134374567" target="_blank"><img class="footer-div-whatsapp-imgWhatsapp" src="./../assets/images/whatsapp.png" alt="logo de whatsapp"></a>
-            <p class="footer-div-whatsapp-numero">+54 911 3437-4567</p><br>
         </div>
-        <div class="footer-div-direccion">
-            <p class="footer-div-direccion-titulo">Dirección</p><br>
-            <p class="footer-div-direccion-texto">Recoleta
-            CABA - Buenos Aires
-            Argentina</p><br>
+      </div>
+      <div class="container-fluid py-4 footer-div-background">
+        <div class="container">
+          <div class="row footer-div-derechos">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                  &copy; Estudiovk Todos los derechos reservados.
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                  <p>Diseñado por Julián Arbeo</p>
+              </div>
+          </div>
         </div>
-        <div class="footer-div-redesSociales">
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-facebook" src="./../assets/images/faceboo.png" alt="logo facebook"></a>
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-instagram" src="./../assets/images/instagram.png" alt="logo de instagram"></a>
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-pinterest" src="./../assets/images/pinterest.png" alt="logo de pinterest"></a>
-        </div><br>
-        <div class="footer-div-copy">
-        <p class="footer-div-copy-texto">© 2022 ESTUDIO VK.  TODOS LOS DERECHOS RESERVADOS.</p>
-        </div>
+      </div>
     </footer>
+  <script src="./../js/bootstrap.bundle.min.js" >
+        
+  </script>
 </body>
-
 </html>

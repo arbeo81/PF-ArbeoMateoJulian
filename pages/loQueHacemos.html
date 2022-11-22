@@ -10,81 +10,156 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;900&family=Roboto:wght@100;300;400&display=swap"
         rel="stylesheet">
     <title>EstudioVk</title>
-    <link rel="shortcut icon" href="./../assets/images/shortcut.jpg" type="Logo Estudiovk" />.
-    <link rel="stylesheet" href="./../css/styles.css">
-
+    <link rel="shortcut icon" href="./../assets/images/shortcut.jpg" type="Logo Estudiovk" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./../css/all.min.css"/>
+    <link rel="stylesheet" href="./../css/bootstrap.min.css"/> 
+    <link rel="stylesheet" href="./../css/styles.css"/>
 </head>
 
-<body id="body">
-    <header id="header">
-            <a title="logo EstudioVk" href="./index.html"><img class="logo" src="./../assets/images/logo.png" alt="logo EstudioVk"></a>   
-        <nav class="nav-header">
-            <ul class="nav-header-ul">
-                <a class="nav-header-ul-links" href="./nosotros.html">Nosotros</a></li>
-                <a class="nav-header-ul-links" href="./proyectos.html">Proyectos</a>
-                <a class="nav-header-ul-links" href="./loQueHacemos.html">Lo que hacemos</a>
-                <a class="nav-header-ul-links" href="./contacto.html">Contacto</a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="section-loQueHacemos">
-            <div class="section-loQueHacemos-div">
-                <h1 class="section-loQueHacemos-h1">LO QUE SABEMOS HACER</h1>
-                <img class="section-loQueHacemos-img" src="./../assets/images/albañil__aplicando.jpg" alt="persona alisando pared">
-                <h2 class="section-loQueHacemos-h2">Diseño Arquitectónico</h2>
-                <p class="section-loQueHacemos-p">Brindamos soluciones innovadoras y creativas con gran calidad de diseño y tecnología</p>
-            </div>
-            <div class="section-reformas-div">
-                <img class="section-reformas-img" src="./../assets/images/albañil__pintando.jpg" alt="imagen de planos de arquitectura">
-                <h2 class="section-reformas-h2">Reformas y refacciones</h2>
-                <p class="section-reformas-p">Identificamos los factores que inciden en el diseño para garantizar la sostenibilidad del proyecto</p>
-            </div>
-            <div class="section-asesoria-div">
-                <img class="section-asesoria-img" src="./../assets/images/albañil__aplicando.jpg" alt="imagen de trabajadores de la construcción">
-                <h2 class="section-asesoria-h2">Asesoria Integral</h2>
-                <p class="section-asesoria-p">Te brindamos asesoría y atención personalizada desde el principio hasta el final de la obra.</p>
-            </div>
-            <div class="section-comoTrabajamos-div">
-                <img class="section-comoTrabajamos-img" src="./../assets/images/fondoHormigon.jpeg" alt="imagen de fondo cemento alisado">
-                <h2 class="section-comoTrabajamos-h2">¿Cómo trabajamos?</h2>
-                <p class="section-comoTrabajamos-p">Análisis del proyecto: Integramos tus necesidades con
-                    nuestra experiencia para lograr una obra única.
-                    Planteamiento de soluciones: Proponemos soluciones
-                    innovadoras y creativas desde un punto de vista
-                    funcional, eficiente y sostenible.
-                    Reducción de costos: Economizamos recursos como
-                    concepto fundamental de diseño. Encontramos
-                    alternativas que se adapten a tus esfuerzos de inversión.</p>
-            </div>    
-        </section>
-    </main>
-    <footer id="footer">
-        <div class="footer-div-emails">
-            <p class="footer-div-parrafo-escribinos">Escribinos a:</P>
-            <a class="footer-div-emails-info" href="mailto:info@estudiovk.com">info@estudiovk.com</a><br>
-            <a class="footer-div-emails-proyecto" href="mailto:proyecto@estudiovk.com">proyecto@estudiovk.com</a><br>
-            <a class="footer-div-emails-admin" href="mailto:administracion@estudiovk.com">administracion@estudiovk.com</a>
-        </div><br>
-        <div class="footer-div-whatsapp">
-            <a href="https://wa.me/5491134374567" target="_blank"><img class="footer-div-whatsapp-imgWhatsapp" src="./../assets/images/whatsapp.png" alt="logo de whatsapp"></a>
-            <p class="footer-div-whatsapp-numero">+54 911 3437-4567</p><br>
-        </div>
-        <div class="footer-div-direccion">
-            <p class="footer-div-direccion-titulo">Dirección</p><br>
-            <p class="footer-div-direccion-texto">Recoleta
-            CABA - Buenos Aires
-            Argentina</p><br>
-        </div>
-        <div class="footer-div-redesSociales">
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-facebook" src="./../assets/images/faceboo.png" alt="logo facebook"></a>
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-instagram" src="./../assets/images/instagram.png" alt="logo de instagram"></a>
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-pinterest" src="./../assets/images/pinterest.png" alt="logo de pinterest"></a>
-        </div><br>
-        <div class="footer-div-copy">
-        <p class="footer-div-copy-texto">© 2022 ESTUDIO VK.  TODOS LOS DERECHOS RESERVADOS.</p>
-        </div>
-    </footer>
-</body>
+<body>
 
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light px-4 px-lg-5">
+         <a href="index.html" class="navbar-brand d-flex justify-content-center align-items-center">
+             <img class="logo" src="./../assets/images/logo.png" alt="logo EstudioVk"></a>
+         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+             <div class="navbar-nav ms-auto align-items-center">
+                 <a href="./nosotros.html" class="nav-item nav-link active">Nosotros</a>
+                 <a href="./proyectos.html" class="nav-item nav-link">Proyectos</a>
+                 <a href="./loQueHacemos.html" class="nav-item nav-link">Lo que hacemos</a>
+                 <a href="./contacto.html" class="nav-item nav-link">Contacto</a>
+             </div>  
+         </div>
+         </nav>
+     </header> 
+     <main>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">   
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./../assets/images/albañil__aplicando.jpg" class="d-block w-100 main-carusel-imagen" alt="Albañil aplicando pintura">
+                    </div>
+                    <div class="carousel-caption d-block d-md-block">
+                      <h1 class="carousel-imagen-texto1 sombreado-titulos animate__animated animate__fadeIn" >Lo que sabemos hacer</h1>
+                    </div>
+                </div>
+            </div>              
+        </section>
+        <section>
+            <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+                <div class="container about px-lg-0">
+                    <div class="row g-0 mx-lg-0">
+                        <div class="col-lg-6 ps-lg-0 section-div-elEstudio">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute img-fluid w-100 h-100" src="./../assets/images/Capa 17.jpg" style="object-fit: cover;" alt="cocina madera y microcemento">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 about-text py-5 wow fadeIn">
+                            <div class="p-lg-5 pe-lg-0">
+                                <div class="bg-primary mb-3 section-div-texto"></div>
+                                <h3 class="display-5 mb-4">Diseño arquitectonico</h3>
+                                <p class="mb-4 pb-2">Brindamos soluciones innovadoras y creativas con gran calidad de diseño y tecnología. Sabemos y tenemos la experiencia que requieren los trabajos. Siempre nos enfocamos en la necesidad del cliente, adaptandonos a todos los requisitos del mismo para obtener el mejor resultado final</p>
+                                <div class="row g-4 mb-4 pb-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+                <div class="container about px-lg-5 ">
+                    <div class="row g-0 mx-lg-0 ">
+                        <div class="col-lg-6 mb-4 section-div-elEstudio">
+                            <div class="mb-5 section-div-texto "></div>
+                                <h3 class="display-5 col-lg-6 ">Reformas</h3>
+                                <p class="mb-4 pb-2">Identificamos los factores, problemas, necesidades y soluciones de los clientes, intentado diseñar y planificar de la mejor forma posible para reducir los problemas que se puedan ocasionar, trabajando con los proveedores de mas alta calidad.<br><br> Además planificamos al detalle todos los planos para poder reduccir y acotar los problemas adelantando los posibles acontecimientos que se puedan ocasionar.</p>
+                                <div class="row g-4 mb-4 pb-3"></div>
+                        </div>
+                        <div class="col-lg-6 about-text py-5 wow fadeIn">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute img-fluid w-100 h-100" src="./../assets/images/albañil__pintando.jpg" style="object-fit: cover;" alt="pintor">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+                <div class="container about px-lg-0">
+                    <div class="row g-0 mx-lg-0">
+                        <div class="col-lg-6 ps-lg-0 section-div-elEstudio">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute img-fluid w-100 h-100" src="./../assets/images/12OEscalera.jpg" style="object-fit: cover;" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 about-text py-5 wow fadeIn">
+                            <div class="p-lg-5 pe-lg-0">
+                                <div class="bg-primary mb-3 section-div-texto"></div>
+                                <h3 class="display-5 mb-4">Paisajismo</h3>
+                                <p class="mb-4 pb-2">Porque creemos que el exterior es tan importante como el exterior de un lugar, nos especializamos en paisajismo para poder dar una experiencia al cliente y a los usuarios que ven desde el exterior el paisajismo de una casa</p>
+                                <div class="row g-4 mb-4 pb-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+                <div id="carouselExampleCaptions" class="carousel slide p-5 " data-bs-ride="false">   
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./../assets/images/fondoMicrocemento.jpeg" class="d-block w-100 main-carusel-imagen" alt="microcemento">
+                        </div>
+                        <div class="carousel-caption d-block d-md-block mt-1 sombreado-parrafos">
+                          <p class="carousel-imagen1-parrafo animate__animated animate__zoomIn">Trabajamos a traves de un análisis del proyecto, integramos tus necesidades con
+                            nuestra experiencia para lograr una obra única. Planteamiento de soluciones, proponemos soluciones innovadoras y creativas desde un punto de vista
+                            funcional, eficiente y sostenible. Economizamos recursos como concepto fundamental de diseño. Encontramos alternativas que se adapten a tus esfuerzos de inversión.</p>
+                        </div>
+                    </div>
+                </div>              
+        </section>     
+    </main>
+    <footer>
+        <div class="container-fluid btn-light text-secondary footer fadeIn" >
+          <div class="container py-5">
+              <div class="row g-5">
+                  <div class="col-lg-4 col-md-6 footer-container-row-div">
+                      <h5 class="footer-container-row-col-h5 mb-4">Dirección</h5>
+                      <p class="mb-2"></i>Recoleta, Caba, Buenos Aires</p>
+                      <p class="mb-2"></i>info@estudiovk.com</p>
+                      <p class="mb-2"></i>+5491134374532</p>
+                  </div>
+                  <div class="footer-div-redesSociales col-lg-4 col-md-6">
+                      <h5 class="footer-container-row-col-h5 mb-4">Redes Sociales</h5>
+                      <a href="https://www.facebook.com/" target="_blank"><img class="footer-div-redesSociales-facebook img-hover-opacity" src="./../assets/images/faceboo.png" alt="logo facebook"></a>
+                      <a href="https://www.instagram.com/" target="_blank"><img class="footer-div-redesSociales-instagram img-hover-opacity" src="./../assets/images/instagram.png" alt="logo de instagram"></a>
+                      <a href="https://ar.pinterest.com/" target="_blank"><img class="footer-div-redesSociales-pinterest img-hover-opacity" src="./../assets/images/pinterest.png" alt="logo de pinterest"></a>
+                  </div>   
+                  <div class="footer-div-redesSociales col-lg-4 col-md-6">
+                      <h5 class="footer-container-row-whatsapp mb-4">Whatsapp</h5>
+                      <a href="https://wa.me/+5491134374356" target="_blank"><img class="mb-4 footer-div-redesSociales-whatsapp img-hover-opacity" src="./../assets/images/whatsapp.png" alt="logo de instagram"></a>
+                  </div> 
+                  </div>    
+              </div>
+          </div>
+        </div>
+        <div class="container-fluid py-4 footer-div-background">
+          <div class="container">
+            <div class="row footer-div-derechos">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; Estudiovk Todos los derechos reservados.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p>Diseñado por Julián Arbeo</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+<script src="./../js/bootstrap.bundle.min.js" >
+        
+</script>
+</body>
 </html>

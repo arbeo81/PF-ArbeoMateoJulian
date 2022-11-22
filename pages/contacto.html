@@ -10,90 +10,133 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;900&family=Roboto:wght@100;300;400&display=swap"
         rel="stylesheet">
     <title>EstudioVk</title>
-    <link rel="shortcut icon" href="./../assets/images/shortcut.jpg" type="Logo Estudiovk" />.
-    <link rel="stylesheet" href="./../css/styles.css">
-
+    <link rel="shortcut icon" href="./../assets/images/shortcut.jpg" type="Logo Estudiovk" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./../css/all.min.css"/>
+    <link rel="stylesheet" href="./../css/bootstrap.min.css"/> 
+    <link rel="stylesheet" href="./../css/styles.css"/>
 </head>
 
-<body id="body">
-    <header id="header">
-            <a title="logo EstudioVk" href="./index.html"><img class="logo" src="./../assets/images/logo.png" alt="logo EstudioVk"></a>   
-        <nav class="nav-header">
-            <ul class="nav-header-ul">
-                <a class="nav-header-ul-links" href="./nosotros.html">Nosotros</a></li>
-                <a class="nav-header-ul-links" href="./proyectos.html">Proyectos</a>
-                <a class="nav-header-ul-links" href="./loQueHacemos.html">Lo que hacemos</a>
-                <a class="nav-header-ul-links" href="./contacto.html">Contacto</a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="seccion-titulo-secciones">
-            <div class="seccion-titulo-secciones-div">
-                <h1 class="seccion-titulo-secciones-h1">Sabemos lo que hacemos y te podemos ayudar</h1>
-                <img class="seccion-titulo-seccion-img" src="./../assets/images/habitacionGris.jpg" alt="Habitación con revestimiento de hormigón">
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light px-4 px-lg-5">
+         <a href="index.html" class="navbar-brand d-flex justify-content-center align-items-center">
+             <img class="logo" src="./../assets/images/logo.png" alt="logo EstudioVk"></a>
+         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+             <div class="navbar-nav ms-auto align-items-center">
+                 <a href="./nosotros.html" class="nav-item nav-link active">Nosotros</a>
+                 <a href="./proyectos.html" class="nav-item nav-link">Proyectos</a>
+                 <a href="./loQueHacemos.html" class="nav-item nav-link">Lo que hacemos</a>
+                 <a href="./contacto.html" class="nav-item nav-link">Contacto</a>
+             </div>  
+         </div>
+         </nav>
+     </header> 
+     <main>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">   
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./../assets/images/habitacionGris.jpg" class="d-block w-100 main-carusel-imagen" alt="...">
+                    </div>
+                    <div class="carousel-caption d-block d-md-block">
+                      <h5 class="carousel-imagen-texto1 sombreado-titulos animate__animated animate__fadeIn" >Contacto</h5>
+                    </div>
+                </div>
+            </div>          
+        </section>
+        <section>
+            <div class="container-fluid bg-light overflow-hidden px-lg-0">
+                <div class="container contact px-lg-0">
+                    <div class="row g-0 mx-lg-0 mt-4">
+                        <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="p-lg-5 ps-lg-0">
+                                <div class="section-title text-start">
+                                    <h1 class="display-5 mb-4">Contactanos</h1>
+                                </div>
+                                    <p class="display-6 mb-4">Contanos que necesitas: </p>
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-12 col-sm-6">
+                                            <input type="text" class="form-control border-0" placeholder="Tu nombre" style="height: 55px;">
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <input type="email" class="form-control border-0" placeholder="Tu email" style="height: 55px;">
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <input type="text" class="form-control border-0" placeholder="Tu celular" style="height: 55px;">
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <select class="form-select border-0" style="height: 55px;">
+                                                <option selected>Tipo de servicio</option>
+                                                <option value="1">Arquitectura</option>
+                                                <option value="2">Interiorismo</option>
+                                                <option value="3">Paisajismo</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <textarea class="form-control border-0" placeholder="¿En que te podemos ayudar?"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pe-lg-0 section-div-maps">
+                            <div class="position-relative h-100 section-div-maps">
+                                <iframe class="section-div-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.11553314115!2d-58.41385246823785!3d-34.58482644970088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses!2sar!4v1669046647552!5m2!1ses!2sar" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <form id="form">
-            <div class="form-div">
-            <img class="form-imgMicrocemento" src="./../assets/images/fondoMicrocemento.jpeg" alt="">
-            </div>
-            <div>
-                <div class="form-div-campoTexto">
-                    <label class="form-div-nombre" for="">Nombre*</label>
-                    <input class="form-div-nombre-texto" type="text" required="">
-                </div>
-                <div class="form-div-campoTelefono">
-                    <label class="form-div-campoTelefono-telefono" for="">Teléfono*</label>
-                    <input class="form-div-campoTelefono-numeros" type="tel"  required="">
-                </div>
-                <div class="form-div-campoEmail">
-                    <label class="form-div-campoEmail-email" for="">Email*</label>
-                    <input class="forma-div-campoEmail-mail" type="email"  required="">
-                </div>
-                <div class="form-div-campoContanos">
-                    <label class="form-div-campoContanos-campoTexto" for="">Contanos un poco que estás necesitando</label>
-                    <input class="form-div-campoContanos-texto" type="text">
-                </div>
-                <div class="form-div-campoCheckbox">
-                    <input class="form-div-campoCheckbox-checkbox" type="checkbox" name="boletin">
-                    <label class="form-div-campoCheckbox-casilla" for="">¿Querés recibir novedaes del esudio?</label>
-                </div>
-                <div class="form-div-botonEnviar">
-                    <input class="form-div-botonEnviar-boton" type="submit" value="enviar ahora">      
-                </div>
-            </div>
-        </form>
-        <div class="div-maps">
-            <iframe class="div-mpas-mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3284.6382062244043!2d-58.3977919856096!3d-34.5880199804636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1666631494386!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
     </main>
-    <footer id="footer">
-        <div class="footer-div-emails">
-            <p class="footer-div-parrafo-escribinos">Escribinos a:</P>
-            <a class="footer-div-emails-info" href="mailto:info@estudiovk.com">info@estudiovk.com</a><br>
-            <a class="footer-div-emails-proyecto" href="mailto:proyecto@estudiovk.com">proyecto@estudiovk.com</a><br>
-            <a class="footer-div-emails-admin" href="mailto:administracion@estudiovk.com">administracion@estudiovk.com</a>
-        </div><br>
-        <div class="footer-div-whatsapp">
-            <a href="https://wa.me/5491134374567" target="_blank"><img class="footer-div-whatsapp-imgWhatsapp" src="./../assets/images/whatsapp.png" alt="logo de whatsapp"></a>
-            <p class="footer-div-whatsapp-numero">+54 911 3437-4567</p><br>
+    <footer>
+        <div class="container-fluid btn-light text-secondary footer fadeIn" >
+          <div class="container py-5">
+              <div class="row g-5">
+                  <div class="col-lg-4 col-md-6 footer-container-row-div">
+                      <h5 class="footer-container-row-col-h5 mb-4">Dirección</h5>
+                      <p class="mb-2"></i>Recoleta, Caba, Buenos Aires</p>
+                      <p class="mb-2"></i>info@estudiovk.com</p>
+                      <p class="mb-2"></i>+5491134374532</p>
+                  </div>
+                  <div class="footer-div-redesSociales col-lg-4 col-md-6">
+                      <h5 class="footer-container-row-col-h5 mb-4">Redes Sociales</h5>
+                      <a href="https://www.facebook.com/" target="_blank"><img class="footer-div-redesSociales-facebook img-hover-opacity" src="./../assets/images/faceboo.png" alt="logo facebook"></a>
+                      <a href="https://www.instagram.com/" target="_blank"><img class="footer-div-redesSociales-instagram img-hover-opacity" src="./../assets/images/instagram.png" alt="logo de instagram"></a>
+                      <a href="https://ar.pinterest.com/" target="_blank"><img class="footer-div-redesSociales-pinterest img-hover-opacity" src="./../assets/images/pinterest.png" alt="logo de pinterest"></a>
+                  </div>      
+                  <div class="footer-div-redesSociales col-lg-4 col-md-6">
+                      <h5 class="footer-container-row-whatsapp mb-4">Whatsapp</h5>
+                      <a href="https://wa.me/+5491134374356" target="_blank"><img class="mb-4 footer-div-redesSociales-whatsapp img-hover-opacity" src="./../assets/images/whatsapp.png" alt="logo de instagram"></a>
+                  </div> 
+                  </div>    
+              </div>
+          </div>
         </div>
-        <div class="footer-div-direccion">
-            <p class="footer-div-direccion-titulo">Dirección</p><br>
-            <p class="footer-div-direccion-texto">Recoleta
-            CABA - Buenos Aires
-            Argentina</p><br>
+        <div class="container-fluid py-4 footer-div-background">
+          <div class="container">
+            <div class="row footer-div-derechos">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; Estudiovk Todos los derechos reservados.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p>Diseñado por Julián Arbeo</p>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="footer-div-redesSociales">
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-facebook" src="./../assets/images/faceboo.png" alt="logo facebook"></a>
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-instagram" src="./../assets/images/instagram.png" alt="logo de instagram"></a>
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-pinterest" src="./../assets/images/pinterest.png" alt="logo de pinterest"></a>
-        </div><br>
-        <div class="footer-div-copy">
-        <p class="footer-div-copy-texto">© 2022 ESTUDIO VK.  TODOS LOS DERECHOS RESERVADOS.</p>
-        </div>
-    </footer>
+      </footer>
+<script src="./../js/bootstrap.bundle.min.js" >
+        
+</script>
 </body>
-
 </html>

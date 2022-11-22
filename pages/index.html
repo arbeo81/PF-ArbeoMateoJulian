@@ -10,106 +10,208 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;900&family=Roboto:wght@100;300;400&display=swap"
         rel="stylesheet">
     <title>EstudioVk</title>
-    <link rel="shortcut icon" href="./../assets/images/shortcut.jpg" type="Logo Estudiovk" />.
+    <link rel="shortcut icon" href="./../assets/images/shortcut.jpg" type="Logo Estudiovk" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./../css/all.min.css">
+    <link rel="stylesheet" href="./../css/bootstrap.min.css"> 
     <link rel="stylesheet" href="./../css/styles.css">
-
 </head>
-
-<body id="body">
-    <header id="header">
-            <a title="logo EstudioVk" href="./index.html"><img class="logo" src="./../assets/images/logo.png" alt="logo EstudioVk"></a>   
-        <nav class="nav-header">
-            <ul class="nav-header-ul">
-                <a class="nav-header-ul-links" href="./nosotros.html">Nosotros</a></li>
-                <a class="nav-header-ul-links" href="./proyectos.html">Proyectos</a>
-                <a class="nav-header-ul-links" href="./loQueHacemos.html">Lo que hacemos</a>
-                <a class="nav-header-ul-links" href="./contacto.html">Contacto</a>
-            </ul>
+<body id="body"> 
+    <header class="header">
+       <nav class="navbar navbar-expand-lg bg-light navbar-light px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex justify-content-center align-items-center">
+            <img class="logo" src="./../assets/images/logo.png" alt="logo EstudioVk"></a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto align-items-center header-div-nav">
+                <a href="./nosotros.html" class="nav-item nav-link">Nosotros</a>
+                <a href="./proyectos.html" class="nav-item nav-link">Proyectos</a>
+                <a href="./loQueHacemos.html" class="nav-item nav-link">Lo que hacemos</a>
+                <a href="./contacto.html" class="nav-item nav-link">Contacto</a>
+            </div>  
+        </div>
         </nav>
-    </header>
-
+    </header>      
     <main id="main">
-        <section class="seccion-titulo"">
-            <img class="seccion-titulo-img" src="./../assets/images/394-casas-de-hormigon.png">
-            <h1 class="seccion-titulo-h1">ARQUITECTURA INTERIORISMO PAISAJISMO</h1>
-            <div class="seccion-titulo-div">
-                <img class="seccion-titulo-div-img" src="./../assets/images/12OEscalera.jpg" alt="escalerasDeOrmigon">
+        <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <h2 class="seccion-titulo-h2">En EstudioVk<br> creamos espacios para vivir</h2>
-            <p class="seccion-titulo-parrafo">El estudio es una oficina de arquitectura orientada a prestar servicios integrales respecto a proyectos y desarrollos en general.<br>
-                Conformado por un importante staff de profesionales multidisciplinados nos caracterizamos por brindar respuestas concretas para los distintos desafios de la profesión.<br>
-                Con más de 5 años y multipes proyectos de distintas disciplinas no caracterizamos por nuestro amor por el detalle y la entrega final del producto.</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./../assets/images/foto casa12-10  3 (1).jpg" class="d-block w-100 main-carusel-imagen" alt="Casa hormigon">
+                <div class="carousel-caption d-block d-md-block">
+                  <h1 class="carousel-imagen-texto1 sombreado-titulos animate__animated animate__fadeIn" >ARQUITECTURA</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./../assets/images/cocinaColorGris.jpg" class="d-block w-100 main-carusel-imagen" alt="Cocina moderna">
+                <div class="carousel-caption d-block d-md-block">
+                  <h2 class="carousel-imagen-texto1 sombreado-titulos" >INTERIORISMO</h2>
+                  <p class="carousel-imagen1-parrafo" >Las últimas tendencias para vivir mejor.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./../assets/images/livingMadera.jpg" class="d-block w-100 main-carusel-imagen" alt="Living moderno">
+                <div class="carousel-caption d-block d-md-block">
+                  <h2 class="carousel-imagen-texto1 sombreado-titulos" >PAISAJISMO</h2>
+                  <p class="carousel-imagen1-parrafo" >Porque el exterior también es importante.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </section>
-        <section  class="seccion-ultimosProyectos">
-            <h2 class="seccion-ultimosProyectos-h2">ULTIMOS PROYECTOS</h2>
-            <img class="seccion-ultimosProyectos-img37" src="./../assets/images/Capa 37.jpg">
-            <img class="seccion-ultimosProyectos-img44" src="./../assets/images/IMG_20181123_112657_044.jpg">
-            <img class="seccion-ultimosProyectos-img84" src="./../assets/images/foto 84.jpg">
-            <img class="seccion-ultimosProyectos-imgJMGbaño" src="./../assets/images/JMGBaño.jpg">
-            <h3 class="seccion-ultimosProyectos-h3-casaRafaela">CASA RAFAELA</h3>
-            <h3 class="seccion-ultimosProyectos-h3-A2774">A 2774</h3>
-            <h3 class="seccion-ultimosProyectos-h3-12DeOctubre">12 DE OCTUBRE</h3>
-            <h3 class="seccion-ultimosProyectos-h3-JMG2458">JMG 2458</h3>
+        <section>
+            <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+                <div class="container about px-lg-0">
+                    <div class="row g-0 mx-lg-0">
+                        <div class="col-lg-6 ps-lg-0 section-div-elEstudio">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute img-fluid w-100 h-100" src="./../assets/images/12OEscalera.jpg" style="object-fit: cover;" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="p-lg-5 pe-lg-0">
+                                <div class="bg-primary mb-3 section-div-texto"></div>
+                                <h3 class="display-5 mb-4">En EstudioVk creamos espacio para vivir</h3>
+                                <p class="mb-4 pb-2">El estudio es una oficina de arquitectura orientada a prestar servicios integrales respecto a proyectos y desarrollos en general.<br><br> Conformado por un importante staff de profesionales multidisciplinados que nos caraceterizamos por brindar respuestas concretas para los distintos desafios de la profesión. <br><br> Con más de 5 años y miltiples proyectos de distintas disciplinas nos caracterizamos por nuestro amor por el detalle y la entrega final del producto</p>
+                                <div class="row g-4 mb-4 pb-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <form id="form">
-            <div class="form-div">
-            <img class="form-imgMicrocemento" src="./../assets/images/fondoMicrocemento.jpeg" alt="">
+        <section>
+          <div>
+            <h3 class="text-center">ULTIMOS PROYECTOS</h3>
+          </div>
+          <div class="card-group p-lg-5 h-75">
+            <div class="card">
+              <img src="./../assets/images/Capa 16.jpg" class="card-img-top img-hover-opacity" alt="cocina gris">
+              <div class="card-body">
+                <h5 class="card-title text-center">12O 750</h5>
+                <p class="card-text text-center">Construccion de casa de 280m2, principalmente realizada en hormigon visto, planificación, proyecto y dirección de obra.</p>
+              </div>
             </div>
-            <div>
-                <div class="form-div-campoTexto">
-                    <label class="form-div-nombre" for="">Nombre*</label>
-                    <input class="form-div-nombre-texto" type="text" required="">
-                </div>
-                <div class="form-div-campoTelefono">
-                    <label class="form-div-campoTelefono-telefono" for="">Teléfono*</label>
-                    <input class="form-div-campoTelefono-numeros" type="tel"  required="">
-                </div>
-                <div class="form-div-campoEmail">
-                    <label class="form-div-campoEmail-email" for="">Email*</label>
-                    <input class="forma-div-campoEmail-mail" type="email"  required="">
-                </div>
-                <div class="form-div-campoContanos">
-                    <label class="form-div-campoContanos-campoTexto" for="">Contanos un poco que estás necesitando</label>
-                    <input class="form-div-campoContanos-texto" type="text">
-                </div>
-                <div class="form-div-campoCheckbox">
-                    <input class="form-div-campoCheckbox-checkbox" type="checkbox" name="boletin">
-                    <label class="form-div-campoCheckbox-casilla" for="">¿Querés recibir novedaes del esudio?</label>
-                </div>
-                <div class="form-div-botonEnviar">
-                    <input class="form-div-botonEnviar-boton" type="submit" value="enviar ahora">      
-                </div>
+            <div class="card">
+              <img src="./../assets/images/Capa 18.jpg" class="card-img-top img-hover-opacity" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">A 2377</h5>
+                <p class="card-text text-center ">Reforma de cocina y baño.</p>              
+              </div>
             </div>
-        </form>
+            <div class="card">
+              <img src="./../assets/images/Capa 22.jpg" class="card-img-top img-hover-opacity" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">F 2774</h5>
+                <p class="card-text text-center">Reforma de cocina, baño, living de departamento de 90m2.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <form>
+          <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container quote px-lg-0">
+              <div class="row g-0 mx-lg-0">
+                  <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                      <div class="position-relative h-100">
+                          <img class="position-absolute img-fluid w-100 h-100" src="./../assets/images/Capa 40 copia.jpg" style="object-fit: cover;" alt="">
+                      </div>
+                  </div>
+                  <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                      <div class="p-lg-5 pe-lg-0">
+                          <div class="bg-primary mb-3" style="width: 60px; height: 2px;"></div>
+                            <h3 class="display-5 mb-5">Consultanos por tu proyecto</h3>
+                            <p class="mb-4 pb-2">Contanos en que te podemos ayudar</p>
+                          <form>
+                              <div class="row g-3">
+                                  <div class="col-12 col-sm-6">
+                                      <input type="text" class="form-control border-0" placeholder="Tu nombre" style="height: 55px;">
+                                  </div>
+                                  <div class="col-12 col-sm-6">
+                                      <input type="email" class="form-control border-0" placeholder="Tu email" style="height: 55px;">
+                                  </div>
+                                  <div class="col-12 col-sm-6">
+                                      <input type="text" class="form-control border-0" placeholder="Tu celular" style="height: 55px;">
+                                  </div>
+                                  <div class="col-12 col-sm-6">
+                                      <select class="form-select border-0" style="height: 55px;">
+                                          <option selected>Tipo de servicio</option>
+                                          <option value="1">Arquitectura</option>
+                                          <option value="2">Interiorismo</option>
+                                          <option value="3">Paisajismo</option>
+                                      </select>
+                                  </div>
+                                  <div class="col-12">
+                                      <textarea class="form-control border-0" placeholder="¿En que te podemos ayudar?"></textarea>
+                                  </div>
+                                  <div class="col-12">
+                                      <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </form>
     </main>   
-
-    <footer id="footer">
-        <div class="footer-div-emails">
-            <p class="footer-div-parrafo-escribinos">Escribinos a:</P>
-            <a class="footer-div-emails-info" href="mailto:info@estudiovk.com">info@estudiovk.com</a><br>
-            <a class="footer-div-emails-proyecto" href="mailto:proyecto@estudiovk.com">proyecto@estudiovk.com</a><br>
-            <a class="footer-div-emails-admin" href="mailto:administracion@estudiovk.com">administracion@estudiovk.com</a>
-        </div><br>
-        <div class="footer-div-whatsapp">
-            <a href="https://wa.me/5491134374567" target="_blank"><img class="footer-div-whatsapp-imgWhatsapp" src="./../assets/images/whatsapp.png" alt="logo de whatsapp"></a>
-            <p class="footer-div-whatsapp-numero">+54 911 3437-4567</p><br>
+    <footer>
+      <div class="container-fluid btn-light text-secondary footer fadeIn" >
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 footer-container-row-div">
+                    <h5 class="footer-container-row-col-h5 mb-4">Dirección</h5>
+                    <p class="mb-2"></i>Recoleta, Caba, Buenos Aires</p>
+                    <p class="mb-2"></i>info@estudiovk.com</p>
+                    <p class="mb-2"></i>+5491134374532</p>
+                </div>
+                <div class="footer-div-redesSociales col-lg-4 col-md-6">
+                    <h5 class="footer-container-row-col-h5 mb-4">Redes Sociales</h5>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-div-redesSociales-facebook img-hover-opacity" src="./../assets/images/faceboo.png" alt="logo facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="footer-div-redesSociales-instagram img-hover-opacity" src="./../assets/images/instagram.png" alt="logo de instagram"></a>
+                    <a href="https://ar.pinterest.com/" target="_blank"><img class="footer-div-redesSociales-pinterest img-hover-opacity" src="./../assets/images/pinterest.png" alt="logo de pinterest"></a>
+                </div>   
+                <div class="footer-div-redesSociales col-lg-4 col-md-6">
+                    <h5 class="footer-container-row-whatsapp mb-4">Whatsapp</h5>
+                    <a href="https://wa.me/+5491134374356" target="_blank"><img class="mb-4 footer-div-redesSociales-whatsapp img-hover-opacity" src="./../assets/images/whatsapp.png" alt="logo de instagram"></a>
+                </div> 
+                </div>    
+            </div>
         </div>
-        <div class="footer-div-direccion">
-            <p class="footer-div-direccion-titulo">Dirección</p><br>
-            <p class="footer-div-direccion-texto">Recoleta
-            CABA - Buenos Aires
-            Argentina</p><br>
+      </div>
+      <div class="container-fluid py-4 footer-div-background">
+        <div class="container">
+          <div class="row footer-div-derechos">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                  &copy; Estudiovk Todos los derechos reservados.
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                  <p>Diseñado por Julián Arbeo</p>
+              </div>
+          </div>
         </div>
-        <div class="footer-div-redesSociales">
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-facebook" src="./../assets/images/faceboo.png" alt="logo facebook"></a>
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-instagram" src="./../assets/images/instagram.png" alt="logo de instagram"></a>
-            <a href="./index.html" target="_blank"><img class="footer-div-redesSociales-pinterest" src="./../assets/images/pinterest.png" alt="logo de pinterest"></a>
-        </div><br>
-        <div class="footer-div-copy">
-        <p class="footer-div-copy-texto">© 2022 ESTUDIO VK.  TODOS LOS DERECHOS RESERVADOS.</p>
-        </div>
+      </div>
     </footer>
+<script src="./../js/bootstrap.bundle.min.js" >
+        
+</script>
 </body>
 
 </html>
