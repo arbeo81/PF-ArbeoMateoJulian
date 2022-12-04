@@ -1,0 +1,268 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Variables*/
+/*Operaciones*/
+/*maps*/
+/*este mixin es posible, pero no es la forma optima de usarlo, porque no le paso 
+ningun modificador, entonces es recomendable en este caso usar extend*/
+/*ahora este mixin recibe un valor, 
+en programación es lo que se llama una funcion
+yo defino una porcion de codigo y luego la llamo cuando la necesito
+en este caso esta recibiendo una variable que solo existe localmente en esta funcion(no es una variable global)*/
+.header {
+  position: sticky;
+  top: 0.5rem;
+  z-index: 100;
+}
+.header .logo {
+  width: 150px;
+  position: absolute;
+  z-index: 60;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: -4rem;
+}
+@media (max-width: 576px) {
+  .header .logo {
+    width: 150px;
+    position: absolute;
+    z-index: 60;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    margin-right: -4rem;
+  }
+}
+
+.main .main-carusel-imagen {
+  display: block;
+  width: 100%;
+  height: 90vh;
+  width: 100%;
+}
+.main .main-carousel-imagen-texto1 {
+  position: absolute;
+  right: 15%;
+  bottom: 13rem;
+  font-size: 4rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+}
+.main .main-carousel-imagen1-parrafo {
+  position: absolute;
+  right: 2%;
+  bottom: 1rem;
+  font-size: 2rem;
+  left: 2%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .main .main-carusel-imagen {
+    font-size: 1.5rem;
+    bottom: 5rem;
+    height: 35vh;
+  }
+}
+@media (max-width: 576px) {
+  .main .main-carousel-imagen-texto1 {
+    font-size: 1.5rem;
+    bottom: 5rem;
+  }
+}
+@media (max-width: 576px) {
+  .main .main-carousel-imagen1-parrafo {
+    font-size: 1rem;
+    bottom: 0.1rem;
+  }
+}
+@media (max-width: 576px) {
+  .main .main-carousel-imagen-texto1 {
+    font-size: 1.5rem;
+    bottom: 5rem;
+  }
+}
+
+.section-div-ultimos_proyectos {
+  text-align: center;
+}
+
+.section-div-h2-ultimos_proyectos {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.img-hover-opacity:hover {
+  filter: opacity(0.5);
+}
+
+.sombreado-titulos {
+  background-color: rgba(206, 206, 206, 0.63);
+  border-radius: 3px;
+}
+
+.section-div-tituloElEquipo {
+  font-size: 2rem;
+}
+
+.section-div-img-estudiovk {
+  object-fit: cover;
+}
+
+.section-div-texto {
+  width: 60px;
+  height: 2px;
+  background-color: #0d6efd !important;
+}
+
+@media (max-width: 576px) {
+  .section-div-texto {
+    margin-top: 1rem;
+  }
+}
+.section-div-color_primario {
+  background-color: #0d6efd !important;
+}
+
+.section-div-ultimosProyectos-row {
+  margin-left: 5rem;
+  object-fit: fill;
+}
+
+.section-div-ultimosProyectos {
+  max-width: 80%;
+  max-height: 60%;
+}
+
+.section-div-elEstudio {
+  min-height: 400px;
+}
+
+@media (max-width: 576px) {
+  .section-div-maps {
+    width: 100%;
+  }
+}
+.form-div-img-height {
+  min-height: 400px;
+}
+
+.form-div-img-tamaño {
+  width: 60px;
+  height: 2px;
+}
+
+.form-form-div-input {
+  height: 55px;
+}
+
+.section-div-h2-nosotros {
+  width: 60px;
+  height: 2px;
+}
+
+.section-div-h3-nosotros {
+  font-size: 1.5rem;
+}
+
+.section-div-proyectos-h2, .section-div-proyectos-h2-parrafo-video, .section-div-proyectos-h2-video, .section-div-proyectos-h2-parrafo {
+  font-weight: bold;
+  color: black;
+}
+
+.section-div-proyectos-h2-parrafo {
+  font-weight: 400;
+}
+
+.section-div-proyecto-video {
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+@media (max-width: 576px) {
+  .section-div-proyecto-video {
+    width: 100%;
+    height: 100%;
+    margin: 0rem;
+    align-items: center;
+    padding: 0rem;
+  }
+}
+.section-div-proyectos-h2-parrafo-video {
+  font-weight: 400;
+}
+
+.footer .footer-div-derechos {
+  color: white;
+}
+.footer .footer-div-background {
+  background: #757575;
+}
+.footer .footer-container-row-div {
+  text-align: center;
+}
+.footer .footer-container-row-div .footer-container-row-div-redesSociales {
+  text-align: center;
+}
+.footer .footer-container-row-div .footer-container-row-col-h5-redesSociales {
+  text-align: center;
+}
+.footer .footer-container-row-div .footer-container-row-div-accesos-h5 {
+  text-align: center;
+}
+.footer .footer-div-redesSociales {
+  text-align: center;
+}
+.footer .footer-div-redesSociales .footer-div-redesSociales-facebook {
+  font-size: 4rem;
+  color: rgba(24, 118, 242, 0.4509803922);
+  transition: transform 0.2s;
+}
+.footer .footer-div-redesSociales .footer-div-redesSociales-facebook:hover {
+  transform: scale(1.1);
+  color: #1876f2;
+}
+.footer .footer-div-redesSociales .footer-div-redesSociales-instagram {
+  font-size: 4rem;
+  color: rgba(212, 48, 138, 0.4509803922);
+  transition: transform 0.2s;
+}
+.footer .footer-div-redesSociales .footer-div-redesSociales-instagram:hover {
+  transform: scale(1.1);
+  color: #D43089;
+}
+.footer .footer-div-redesSociales .footer-div-redesSociales-pinterest {
+  font-size: 4rem;
+  color: rgba(255, 0, 0, 0.404);
+  transition: transform 0.2s;
+}
+.footer .footer-div-redesSociales .footer-div-redesSociales-pinterest:hover {
+  transform: scale(1.1);
+  color: red;
+}
+.footer .footer-div-redesSociales .footer-div-redesSociales-whatsapp {
+  font-size: 4rem;
+  color: rgba(37, 211, 101, 0.431372549);
+  transition: transform 0.2s;
+}
+.footer .footer-div-redesSociales .footer-div-redesSociales-whatsapp:hover {
+  transform: scale(1.1);
+  color: #25D366;
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,28 @@
+.header{  
+    position: sticky;
+    top: .5rem;
+    z-index: 100;
+
+    .logo{
+        width: $width + 50;
+        position: absolute;
+        z-index: 60;
+        padding-left: 1rem; 
+        padding-right: $padding;
+        margin-right: -4rem;
+    }
+
+        @media (max-width: 576px){
+
+            .logo{
+                width: $width + 50;
+                position: absolute;
+                z-index: 60;
+                padding-left: 2rem; 
+                padding-right: $padding;
+                margin-right: -4rem;
+    
+        }
+    }
+}
+

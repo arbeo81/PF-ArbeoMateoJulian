@@ -1,0 +1,76 @@
+.footer{
+
+    .footer-div-derechos{
+        color: white;
+    }
+
+    .footer-div-background{
+
+        background: #757575
+    }
+
+    .footer-container-row-div{
+        text-align: $text-align;
+              
+        .footer-container-row-div-redesSociales{
+       
+        text-align: $text-align; 
+        }
+        .footer-container-row-col-h5-redesSociales{
+     
+        text-align: $text-align;
+        }
+    
+        .footer-container-row-div-accesos-h5{
+        
+        text-align: $text-align;
+        }
+    }   
+    
+    .footer-div-redesSociales{
+           
+        text-align: $text-align;
+        
+        .footer-div-redesSociales-facebook{
+            font-size: 4rem;
+            color: map-get($redes-1, face);
+            transition: transform .2s;
+            &:hover{ 
+                transform: scale(1.1);
+                color: map-get($redes-2, face)
+            }
+        }
+    
+        .footer-div-redesSociales-instagram{
+            font-size: 4rem;
+            color: map-get($redes-1, instagram);
+            transition: transform .2s;
+            &:hover{ 
+                transform: scale(1.1);
+                color: map-get($redes-2, instagram)
+            }
+        }
+    
+        .footer-div-redesSociales-pinterest{
+            font-size: 4rem;
+            color: map-get($redes-1, pinterest);
+            transition: transform .2s;
+            &:hover{ 
+                transform: scale(1.1);
+                color: map-get($redes-2, pinterest)
+            }
+        }
+    
+        .footer-div-redesSociales-whatsapp{
+            font-size: 4rem;
+            color: map-get($redes-1, whatsapp);
+            transition: transform .2s;
+            &:hover{ 
+                transform: scale(1.1);
+                color: map-get($redes-2, whatsapp )
+            }
+        }
+        
+     }   
+}
+
