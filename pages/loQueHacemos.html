@@ -20,7 +20,7 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-light navbar-light px-4 px-lg-5">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light px-4 px-lg-5 header-nav">
          <a href="../index.html" class="navbar-brand d-flex justify-content-center align-items-center">
              <img class="logo" src="./../assets/images/logo.png" alt="logo_EstudioVk"></a>
          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -28,10 +28,10 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarCollapse">
              <div class="navbar-nav ms-auto align-items-center">
-                 <a href="./nosotros.html" class="nav-item nav-link active">Nosotros</a>
-                 <a href="./proyectos.html" class="nav-item nav-link">Proyectos</a>
-                 <a href="./loQueHacemos.html" class="nav-item nav-link">Lo que hacemos</a>
-                 <a href="./contacto.html" class="nav-item nav-link">Contacto</a>
+                 <a href="./nosotros.html" class="nav-item nav-link header-nav-div-link">Nosotros</a>
+                 <a href="./proyectos.html" class="nav-item nav-link header-nav-div-link">Proyectos</a>
+                 <a href="./loQueHacemos.html" class="nav-item nav-link header-nav-div-link">Lo que hacemos</a>
+                 <a href="./contacto.html" class="nav-item nav-link header-nav-div-link">Contacto</a>
              </div>  
          </div>
          </nav>
@@ -41,7 +41,7 @@
             <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">   
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./../assets/images/albañil__aplicando.jpg" class="d-block w-100 main-carusel-imagen" alt="Albañil_aplicando_pintura">
+                        <img src="./../assets/images/albañil__aplicando.jpg" class="d-block w-100 main-carusel-imagen" loading="lazy" alt="Brazo de trabajador albañil aplicando masilla con paleta en pared">
                     </div>
                     <div class="carousel-caption d-block d-md-block">
                       <h2 class="main-carousel-imagen-texto1 sombreado-titulos animate__animated animate__fadeIn" >Lo que sabemos hacer</h2>
@@ -55,7 +55,7 @@
                     <div class="row g-0 mx-lg-0">
                         <div class="col-lg-6 ps-lg-0 section-div-elEstudio">
                             <div class="position-relative h-100">
-                                <img class="position-absolute img-fluid w-100 h-100" src="./../assets/images/Capa 17.jpg" style="object-fit: cover;" alt="cocina_madera_y_microcemento">
+                                <img class="position-absolute img-fluid w-100 h-100 section-div-elEstudio-img" src="./../assets/images/Capa 17.jpg" loading="lazy" alt="Cocina con isla en color marmol carrara con varilla de madera y fondo de cocina de madera con mesada, piso en color cemento">
                             </div>
                         </div>
                         <div class="col-lg-6 about-text py-5 wow fadeIn">
@@ -73,14 +73,14 @@
                 <div class="container about px-lg-2 ">
                     <div class="row g-0 mx-lg-0 ">
                         <div class="col-lg-6 mb-2 section-div-elEstudio">
-                            <div class="mb-5 section-div-texto "></div>
+                            <div class="mb-5 mt-5 section-div-texto "></div>
                                 <h2 class="display-5 col-lg-6 ">Reformas</h2>
                                 <p class="mb-4 pb-2">Identificamos los factores, problemas, necesidades y soluciones de los clientes, intentado diseñar y planificar de la mejor forma posible para reducir los problemas que se puedan ocasionar, trabajando con los proveedores de mas alta calidad.<br><br> Además planificamos al detalle todos los planos para poder reduccir y acotar los problemas adelantando los posibles acontecimientos que se puedan ocasionar.</p>
                                 <div class="row g-4 mb-4 pb-3"></div>
                         </div>
                         <div class="col-lg-6 about-text py-5 wow fadeIn">
                             <div class="position-relative h-100">
-                                <img class="position-absolute img-fluid w-100 h-100" src="./../assets/images/albañil__pintando.jpg" style="object-fit: cover;" alt="pintor">
+                                <img class="position-absolute img-fluid w-100 h-100 section-div-elEstudio-img" src="./../assets/images/albañil__pintando.jpg" loading="lazy" alt="Pintor en escalera pintando cielorraso de color blanco">
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                     <div class="row g-0 mx-lg-0">
                         <div class="col-lg-6 ps-lg-0 section-div-elEstudio">
                             <div class="position-relative h-100">
-                                <img class="position-absolute img-fluid w-100 h-100" src="./../assets/images/12OEscalera.jpg" style="object-fit: cover;" alt="">
+                                <img class="position-absolute img-fluid w-100 h-100 section-div-elEstudio-img" src="./../assets/images/12OEscalera.jpg" loading="lazy" alt="Detalle de escalera de hormigón integrada en living con luces de color ambar colgadas del techo y mueble de varillas de madera">
                             </div>
                         </div>
                         <div class="col-lg-6 about-text py-5 wow fadeIn">
@@ -114,7 +114,7 @@
                   <div class="col-lg-4 col-md-6 footer-container-row-div">
                       <h3 class="footer-container-row-col-h5 mb-4">Dirección</h3>
                       <p class="mb-2"></i>Recoleta, Caba, Buenos Aires</p>
-                      <p class="mb-2"></i>info@estudiovk.com</p>
+                      <a class="footer-div-mail" href="mailto:info@estudiovk.com"><p class="mb-2"></i>info@estudiovk.com</p></a>
                       <p class="mb-2"></i>+5491134374532</p>
                   </div>
                   <div class="footer-div-redesSociales col-lg-4 col-md-6">

@@ -12,16 +12,16 @@
 /*Variables*/
 /*Operaciones*/
 /*maps*/
-/*este mixin es posible, pero no es la forma optima de usarlo, porque no le paso 
-ningun modificador, entonces es recomendable en este caso usar extend*/
-/*ahora este mixin recibe un valor, 
-en programación es lo que se llama una funcion
-yo defino una porcion de codigo y luego la llamo cuando la necesito
-en este caso esta recibiendo una variable que solo existe localmente en esta funcion(no es una variable global)*/
 .header {
   position: sticky;
   top: 0.5rem;
   z-index: 100;
+}
+.header .header-nav {
+  box-shadow: 10px 7px 17px -4px rgba(0, 0, 0, 0.43);
+}
+.header .header-nav-div-link:hover {
+  text-decoration: underline;
 }
 .header .logo {
   width: 150px;
@@ -47,6 +47,7 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
   width: 100%;
   height: 90vh;
   width: 100%;
+  object-fit: cover;
 }
 .main .main-carousel-imagen-texto1 {
   position: absolute;
@@ -57,6 +58,7 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   text-align: center;
+  box-shadow: 10px 7px 17px -4px rgba(0, 0, 0, 0.43);
 }
 .main .main-carousel-imagen1-parrafo {
   position: absolute;
@@ -67,6 +69,8 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   text-align: center;
+  background-color: rgba(114, 114, 114, 0.507);
+  box-shadow: 10px 7px 17px -4px rgba(0, 0, 0, 0.43);
 }
 @media (max-width: 576px) {
   .main .main-carusel-imagen {
@@ -79,12 +83,20 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
   .main .main-carousel-imagen-texto1 {
     font-size: 1.5rem;
     bottom: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    box-shadow: 10px 7px 17px -4px rgba(0, 0, 0, 0.43);
   }
 }
 @media (max-width: 576px) {
   .main .main-carousel-imagen1-parrafo {
     font-size: 1rem;
     bottom: 0.1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 10px 7px 17px -4px rgba(0, 0, 0, 0.43);
   }
 }
 @media (max-width: 576px) {
@@ -104,6 +116,7 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
   background-color: #f8f9fa;
   padding: 1rem;
   border-radius: 0.5rem;
+  box-shadow: 10px 7px 17px -4px rgba(0, 0, 0, 0.43);
 }
 
 .img-hover-opacity:hover {
@@ -111,8 +124,14 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
 }
 
 .sombreado-titulos {
-  background-color: rgba(206, 206, 206, 0.63);
+  background-color: rgba(114, 114, 114, 0.507);
   border-radius: 3px;
+}
+
+.form-div-a-botton {
+  color: #ffffff;
+  background-color: #dfc84a;
+  border-color: #dfc84a;
 }
 
 .section-div-tituloElEquipo {
@@ -126,7 +145,7 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
 .section-div-texto {
   width: 60px;
   height: 2px;
-  background-color: #0d6efd !important;
+  background-color: #dfc84a !important;
 }
 
 @media (max-width: 576px) {
@@ -135,7 +154,7 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
   }
 }
 .section-div-color_primario {
-  background-color: #0d6efd !important;
+  background-color: #dfc84a !important;
 }
 
 .section-div-ultimosProyectos-row {
@@ -152,6 +171,10 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
   min-height: 400px;
 }
 
+.section-div-elEstudio-img {
+  object-fit: cover;
+}
+
 @media (max-width: 576px) {
   .section-div-maps {
     width: 100%;
@@ -164,6 +187,7 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
 .form-div-img-tamaño {
   width: 60px;
   height: 2px;
+  background-color: #dfc84a;
 }
 
 .form-form-div-input {
@@ -173,6 +197,7 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
 .section-div-h2-nosotros {
   width: 60px;
   height: 2px;
+  background-color: #dfc84a;
 }
 
 .section-div-h3-nosotros {
@@ -209,11 +234,130 @@ en este caso esta recibiendo una variable que solo existe localmente en esta fun
   font-weight: 400;
 }
 
+.section-div-button-proyectos {
+  align-items: flex-end;
+  color: #ffffff;
+  background-color: #dfc84a;
+  border-color: #dfc84a;
+}
+
+.main-section-div-error404-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  border-radius: calc(0.25rem - 1px);
+}
+
+.main-section-div-error404 {
+  max-width: 100%;
+  margin-top: 0rem;
+  color: grey;
+}
+
+.main-section-div-error404-h1 {
+  display: flex;
+  text-align: center;
+  margin-top: 10rem;
+  background-color: rgba(255, 250, 250, 0.473);
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: 10px 7px 17px -4px rgba(0, 0, 0, 0.43);
+}
+
+@media (max-width: 576px) {
+  .main-section-div-error404-h1 {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    margin-left: 0%;
+    box-shadow: 10px 7px 17px -4px rgba(0, 0, 0, 0.43);
+  }
+}
+.main-section-div-error-parrafo {
+  display: flex;
+  font-size: 1.2rem;
+  background-color: rgba(255, 250, 250, 0.473);
+  justify-content: center;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: 10px 7px 17px -4px rgba(0, 0, 0, 0.43);
+}
+
+@media (max-width: 576px) {
+  .main-section-div-error-parrafo {
+    display: block;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    margin-left: 0%;
+    box-shadow: 10px 7px 17px -4px rgba(0, 0, 0, 0.43);
+  }
+}
+.main-section-div-error-button {
+  display: flex;
+  margin-top: 25rem;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: #dfc84a;
+  border-color: #dfc84a;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+.main-section-div-error-button:hover {
+  color: #fff;
+  background-color: #9b8922;
+  border-color: #9b8922;
+}
+
+@media (max-width: 576px) {
+  .main-section-div-error-button {
+    display: block;
+    font-size: 1rem;
+    margin-top: 13rem;
+    padding: 1rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 7px 17px -4px rgba(0, 0, 0, 0.43);
+  }
+}
+.main-section-div-error-ancla {
+  text-decoration: none;
+}
+
+.section-div-ejemploProyecto-h2 {
+  font-size: 1.5rem;
+}
+
+.section-div-ejemploProyectos-img {
+  margin-top: 4.5rem;
+}
+
 .footer .footer-div-derechos {
   color: white;
 }
 .footer .footer-div-background {
   background: #757575;
+}
+.footer .footer-div-mail {
+  text-decoration: none;
+  color: grey;
 }
 .footer .footer-container-row-div {
   text-align: center;
