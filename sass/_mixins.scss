@@ -18,7 +18,6 @@ margin-right: 3rem;
 
 @mixin miMixin2($valor,$borde-principal,$color:rgb(243, 86, 112)){
     height:$valor;
-    /*puede tener mas variables que no reciben valor*/
     background-color: aqua;
     border:$borde-principal;
     color:$color;
